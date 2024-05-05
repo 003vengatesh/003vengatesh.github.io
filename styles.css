@@ -7,7 +7,7 @@ body, html {
 }
 
 .banner {
-    height: 50vh; /* Half of the viewport height */
+    height: 250px; /* Half of the viewport height */
     width: 100%;
     background-image: url('images/banner.jpg');
     background-size: cover;
