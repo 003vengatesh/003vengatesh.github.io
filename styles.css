@@ -13,22 +13,23 @@ body, html {
     background-size: cover;
     background-position: center;
     position: relative;
+    border-radius: 0 0 25px 25px; /* Curved structure */
 }
 
 .banner-text {
     position: absolute;
     top: 50%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: large;
-    font-weight: 200;
+    right: 0; /* Align to the right */
+    transform: translate(0, -50%);
+    text-align: right; /* Align text to the right */
     color: white;
+    padding-right: 20px; /* Add some right padding */
 }
 
 .navbar {
     background-color: rgb(70, 163, 240);
     overflow: hidden;
+    border-radius: 25px; /* Curved structure */
 }
 
 .navbar a {
@@ -38,12 +39,86 @@ body, html {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 25px; /* Curved structure */
 }
 
 .navbar a:hover {
     background-color: #ddd;
     color: black;
 }
+
+/* Align buttons to the right */
 .navbar a:nth-child(n+1) {
     float: right;
 }
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.right-section {
+    flex: 1;
+    padding-left: 20px;
+    transition: all 0.5s ease; /* Transition effect */
+}
+
+.right-section:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.right-section h2 {
+    color: rgb(70, 163, 240); /* Theme color */
+}
+
+.right-section p {
+    color: #333; /* Dark text color */
+}
+/* styles.css */
+
+/* styles.css */
+
+.left-section {
+    flex: 1;
+    max-height: 100%; /* Set maximum height to 100% */
+    overflow: hidden; /* Hide overflow */
+}
+
+.left-section img {
+    width: auto; /* Allow width to adjust automatically */
+    max-height: 300px; /* Set a specific maximum height */
+    display: block; /* Ensure image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* styles.css */
+
+.left-section {
+    flex: 1;
+    max-height: 100%; /* Set maximum height to 100% */
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-container {
+    max-width: 50%;
+    margin: 20px auto; /* Add margin and center the container */
+    border-radius: 10px; /* Add border radius for a curved structure */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    display: block;
+    border-radius: 10px; /* Add border radius for a curved structure */
+}
+
+/* Match the theme color */
+.image-container {
+    background-color: rgb(70, 163, 240);
+}
+
