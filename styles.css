@@ -1,11 +1,13 @@
 /* styles.css */
 
+/* Reset CSS */
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Banner Styling */
 .banner {
     height: 250px; /* Half of the viewport height */
     width: 100%;
@@ -26,10 +28,12 @@ body, html {
     padding-right: 20px; /* Add some right padding */
 }
 
+/* Navigation Bar Styling */
 .navbar {
     background-color: rgb(70, 163, 240);
     overflow: hidden;
     border-radius: 25px; /* Curved structure */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
 }
 
 .navbar a {
@@ -42,71 +46,39 @@ body, html {
     border-radius: 25px; /* Curved structure */
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+/* Underline for active section */
+.navbar a.active {
+    border-bottom: 2px solid white;
 }
 
 /* Align buttons to the right */
 .navbar a:nth-child(n+1) {
     float: right;
 }
+/* Hover effect for navigation buttons */
+.navbar a:hover {
+    background-color: white; /* Semi-transparent white */
+    color: black; /* Text color on hover */
+}
 
+/* Content Styling */
 .content {
     display: flex;
     padding: 20px;
+    border-radius: 10px; /* Curved structure */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
 }
 
+/* Left Section Styling */
 .left-section {
-    flex: 1;
-}
-
-.right-section {
-    flex: 1;
-    padding-left: 20px;
-    transition: all 0.5s ease; /* Transition effect */
-}
-
-.right-section:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-}
-
-.right-section h2 {
-    color: rgb(70, 163, 240); /* Theme color */
-}
-
-.right-section p {
-    color: #333; /* Dark text color */
-}
-/* styles.css */
-
-/* styles.css */
-
-.left-section {
-    flex: 1;
-    max-height: 100%; /* Set maximum height to 100% */
-    overflow: hidden; /* Hide overflow */
-}
-
-.left-section img {
-    width: auto; /* Allow width to adjust automatically */
-    max-height: 300px; /* Set a specific maximum height */
-    display: block; /* Ensure image is displayed as a block element */
-    margin: 0 auto; /* Center the image horizontally */
-}
-
-/* styles.css */
-
-.left-section {
-    flex: 1;
-    max-height: 100%; /* Set maximum height to 100% */
-    overflow: hidden; /* Hide overflow */
+    width: 200px; /* Set width for image section */
+    margin-right: 20px; /* Add margin between sections */
 }
 
 .image-container {
-    max-width: 50%;
-    margin: 20px auto; /* Add margin and center the container */
-    border-radius: 10px; /* Add border radius for a curved structure */
+    max-width: 100%;
+    height: 250px; /* Set height to 300px */
+    border-radius: 10px; /* Curved structure */
     overflow: hidden; /* Hide overflow */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
 }
@@ -114,11 +86,101 @@ body, html {
 .image-container img {
     width: 100%; /* Make the image fill the container */
     display: block;
-    border-radius: 10px; /* Add border radius for a curved structure */
+    border-radius: 10px; /* Curved structure */
 }
 
-/* Match the theme color */
-.image-container {
-    background-color: rgb(70, 163, 240);
+/* Right Section Styling */
+.right-section {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px; /* Curved structure */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
 }
 
+.right-section h2 {
+    color: rgb(70, 163, 240); /* Theme color */
+}
+
+.right-section p {
+    white-space: pre-wrap; /* Preserve line breaks */
+    font-family: Arial, sans-serif; /* Use default font */
+    color: #333; /* Dark text color */
+}
+
+/* Right Section Styling */
+.right-section,
+.additional-info {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px; /* Curved structure */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+    width: calc(100% - 240px); /* Set width for about me section */
+}
+
+.right-section h2,
+.additional-info h2 {
+    color: rgb(70, 163, 240); /* Theme color */
+}
+
+.right-section pre,
+.additional-info p {
+    white-space: pre-wrap; /* Preserve line breaks */
+    font-family: Arial, sans-serif; /* Use default font */
+    color: #333; /* Dark text color */
+}
+/* Additional Info Section Styling */
+.additional-info {
+    padding: 20px;
+    border-radius: 10px; /* Curved structure */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+    margin-top: 20px;
+    margin-left: 100px; /* Add margin to separate from the about section */
+}
+/* Add CSS for headings in the about me section */
+.right-section h2,
+.additional-info h2 {
+    color: rgb(70, 163, 240); /* Theme color */
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    font-size: 24px; /* Increase font size */
+    margin-bottom: 10px; /* Add some spacing below each heading */
+    position: relative; /* Set position relative for effects */
+}
+
+
+/* Add hover effect to headings */
+.right-section h2:hover,
+.additional-info h2:hover {
+    color: #FFA500; /* Change color on hover to orange */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    animation: shake 0.5s ease; /* Add shake animation */
+}
+
+/* Define shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
+/* Add CSS for paragraph text */
+.additional-info p {
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Main Container Styling */
+.main-container {
+    border-radius: 0 0 25px 25px; /* Curved structure */
+    overflow: hidden; /* Hide overflow to prevent content overflow */
+    margin-bottom: 20px; /* Add margin to separate from the footer */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+}
+/* Main Container Styling */
+.main-container {
+    border-radius: 0 0 25px 25px; /* Curved structure */
+    overflow: hidden; /* Hide overflow to prevent content overflow */
+    margin-bottom: 20px; /* Add margin to separate from the footer */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+}
