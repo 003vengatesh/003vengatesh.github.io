@@ -99,6 +99,8 @@ body, html {
 /* Content Styling */
 .content {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     border-radius: 10px; /* Curved structure */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
@@ -255,4 +257,11 @@ body, html {
 
 #downloadBtn:hover {
     background-color: #0056b3;
+}
+
+#resumeImage {
+    max-width: 90%; /* Ensure the image doesn't exceed its container */
+    border-radius: 10px; /* Add curved borders */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+    margin-bottom: 20px; /* Add some space below the image */
 }
