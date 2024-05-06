@@ -55,10 +55,40 @@ body, html {
 .navbar a:nth-child(n+1) {
     float: right;
 }
+
 /* Hover effect for navigation buttons */
 .navbar a:hover {
     background-color: white; /* Semi-transparent white */
     color: black; /* Text color on hover */
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px; /* Curved structure */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+}
+
+.section h2 {
+    color: rgb(70, 163, 240); /* Theme color */
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    font-size: 24px; /* Increase font size */
+    margin-bottom: 10px; /* Add some spacing below each heading */
+}
+
+/* Style for Resume and CV headings */
+#resume h2,
+#cv h2 {
+    background-color: rgb(70, 163, 240); /* Background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border-radius: 25px; /* Rounded corners */
+    display: inline-block; /* Ensure inline display */
+    margin-right: 10px; /* Margin between headings */
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: left;/* Bottom margin */
 }
 
 /* Content Styling */
@@ -177,10 +207,13 @@ body, html {
     margin-bottom: 20px; /* Add margin to separate from the footer */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
 }
-/* Main Container Styling */
-.main-container {
-    border-radius: 0 0 25px 25px; /* Curved structure */
-    overflow: hidden; /* Hide overflow to prevent content overflow */
-    margin-bottom: 20px; /* Add margin to separate from the footer */
+.section {
+    background-color: rgb(70, 163, 240);
+    overflow: hidden;
+    border-radius: 25px; /* Curved structure */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+    height: 50px; /* Set the height */
+    display: flex; /* Ensure flex layout */
+    align-items: center; /* Center content vertically */
+    padding: 0 20px; /* Adjust padding */
 }
