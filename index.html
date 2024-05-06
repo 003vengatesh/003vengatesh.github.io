@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <a href="#cv">CV</a>
         <a href="#resume">RESUME</a>
         <a href="#projects">PROJECTS</a>
@@ -80,7 +80,10 @@ Explorer of Data Realms & Architect of Tomorrow
         <h2>Resume</h2>
     </div>
     <div class="content">
-        <iframe src="pdf/Vengateshwaran resume .pdf" width="100%" height="600px" frameborder="0"></iframe>
+        <div class="resume-image">
+            <img src="images/Vengateshwaran resume.jpg" alt="Resume Image">
+            <a href="pdf/Vengateshwaran resume .pdf" download="resume.pdf" id="downloadBtn">Download Resume</a>
+        </div>
     </div>
 
     <div id="cv" class="section">
@@ -89,6 +92,7 @@ Explorer of Data Realms & Architect of Tomorrow
     <div class="content">        
         <p>Lorem ipsum</p>
     </div>
+    <button onclick="backToTop()" id="backToTopBtn" title="Go to top">Top</button>
 
     <script src="script.js"></script>
 </body>
